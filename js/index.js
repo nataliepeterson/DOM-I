@@ -90,3 +90,22 @@ contactP[2].innerHTML = siteContent.contact["email"];
 
 let footer = document.querySelector("footer");
 footer.innerHTML = siteContent.footer["copyright"];
+
+navItems.forEach((el) => {
+  el.style.color = "green";
+});
+
+const newNavOne = document.createElement("nav-item-one");
+newNavOne.textContent = "Code";
+
+const parentElement = document.querySelector("nav");
+parentElement.prepend(newNavOne);
+
+newNavOne.style.color = "green";
+
+const newNavTwo = document.createElement("nav-item-two");
+newNavTwo.textContent = "Coffee";
+
+parentElement.appendChild(newNavTwo);
+
+newNavTwo.style.color = "green";
